@@ -1,11 +1,23 @@
 package com.academy.dashboard.topics;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Topic {
 	
+	@Id
 	private String id;
 	private String title;
 	private String difficulty;
 	
+	
+	
+	public Topic() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public Topic(String id, String title, String difficulty) {
 		super();
 		this.id = id;
