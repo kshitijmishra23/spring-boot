@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Scaler</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div style="margin:10px;padding=10px;">
+	<h1>Here is the list of topics!</h1>
+	<ul th:each="topic: ${topics}">
+		<a th:href="@{'/topics/' + ${topic.id}}">
+			<li th:text="${topic.title}"></li>
+		</a>
+	</ul>
+	</div>
+</body>
+</html>
